@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tableG" cx="50%" cy="60%" r="75%">
+      <stop offset="0%" stop-color="#2a1a12"/>
+      <stop offset="60%" stop-color="#180e0a"/>
+      <stop offset="100%" stop-color="#0d0705"/>
+    </radialGradient>
+    <linearGradient id="saucerG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7"/>
+      <stop offset="50%" stop-color="#e2d6c3"/>
+      <stop offset="100%" stop-color="#ab957a"/>
+    </linearGradient>
+    <linearGradient id="cupG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4eee1"/>
+      <stop offset="40%" stop-color="#ffffff"/>
+      <stop offset="85%" stop-color="#d6c6b0"/>
+      <stop offset="100%" stop-color="#a48c6f"/>
+    </linearGradient>
+    <radialGradient id="cremaG" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#d99b4b"/>
+      <stop offset="40%" stop-color="#b66d28"/>
+      <stop offset="80%" stop-color="#643312"/>
+      <stop offset="100%" stop-color="#301506"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Dark Atmospheric Background -->
+  <rect width="800" height="600" fill="url(#tableG)"/>
+  
+  <!-- Subtle Bokeh Circles -->
+  <circle cx="180" cy="140" r="90" fill="#c65d3b" opacity="0.1" filter="url(#glow)"/>
+  <circle cx="680" cy="220" r="130" fill="#b8743a" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="380" cy="80" r="70" fill="#ffd199" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Warm Table Surface Spotlight -->
+  <ellipse cx="400" cy="460" rx="300" ry="110" fill="#b8743a" opacity="0.1" filter="url(#glow)"/>
+
+  <!-- Saucer Shadow & Plate -->
+  <g filter="url(#shadow)">
+    <ellipse cx="400" cy="450" rx="210" ry="60" fill="url(#saucerG)"/>
+    <ellipse cx="400" cy="447" rx="170" ry="46" fill="#baa48b"/>
+    <ellipse cx="400" cy="445" rx="160" ry="42" fill="#efe4d3"/>
+    <ellipse cx="400" cy="445" rx="110" ry="28" fill="#cbb79e" opacity="0.6"/>
+  </g>
+
+  <!-- Cup Handle -->
+  <path d="M 480 320 C 565 320 570 410 490 415" fill="none" stroke="url(#cupG)" stroke-width="26" stroke-linecap="round" filter="url(#shadow)"/>
+  <path d="M 480 320 C 565 320 570 410 490 415" fill="none" stroke="#fff" stroke-width="4" stroke-opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Cup Body -->
+  <g filter="url(#shadow)">
+    <!-- Base cup silhouette -->
+    <path d="M 285 300 Q 295 440 400 440 Q 505 440 515 300 Z" fill="url(#cupG)"/>
+    <!-- Cup Rim top rim -->
+    <ellipse cx="400" cy="300" rx="115" ry="32" fill="#fff"/>
+    <ellipse cx="400" cy="300" rx="108" ry="28" fill="#58311a"/>
+    <!-- Coffee Liquid & Crema -->
+    <ellipse cx="400" cy="305" rx="104" ry="26" fill="url(#cremaG)"/>
+    <!-- Crema marbling -->
+    <path d="M 330 306 Q 370 295 410 307 Q 450 318 470 304" fill="none" stroke="#ffc375" stroke-width="4" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 350 312 Q 390 318 440 310" fill="none" stroke="#ffe7bf" stroke-width="3" opacity="0.5"/>
+    <circle cx="430" cy="303" r="5" fill="#ffd599" opacity="0.7"/>
+    <circle cx="370" cy="308" r="4" fill="#ffd599" opacity="0.6"/>
+  </g>
+
+  <!-- Steam / Aroma rising -->
+  <path d="M 380 260 C 370 210 400 170 385 120" fill="none" stroke="#fff" stroke-width="5" opacity="0.25" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M 420 250 C 435 200 405 160 425 105" fill="none" stroke="#fff" stroke-width="4" opacity="0.2" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Roasted Coffee Beans near the cup -->
+  <g transform="translate(230, 470) rotate(-25) scale(0.75)" filter="url(#shadow)">
+    <ellipse cx="0" cy="0" rx="22" ry="32" fill="#391b0f"/>
+    <path d="M 0 -28 Q 6 0 0 28" fill="none" stroke="#7e4324" stroke-width="3"/>
+  </g>
+  <g transform="translate(560, 460) rotate(35) scale(0.68)" filter="url(#shadow)">
+    <ellipse cx="0" cy="0" rx="22" ry="32" fill="#2d150b"/>
+    <path d="M 0 -28 Q -5 0 0 28" fill="none" stroke="#7e4324" stroke-width="3"/>
+  </g>
+  <g transform="translate(595, 480) rotate(-15) scale(0.6)" filter="url(#shadow)">
+    <ellipse cx="0" cy="0" rx="22" ry="32" fill="#442113"/>
+    <path d="M 0 -28 Q 5 0 0 28" fill="none" stroke="#7e4324" stroke-width="3"/>
+  </g>
+
+  <!-- Badge / Text Overlay Tag in SVG -->
+  <rect x="35" y="35" rx="8" ry="8" width="130" height="34" fill="#b8743a" opacity="0.9"/>
+  <text x="100" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#faf5ee" text-anchor="middle">إسبريسو فاخر</text>
+</svg>

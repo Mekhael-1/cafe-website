@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1a11"/>
+      <stop offset="100%" stop-color="#0f0704"/>
+    </linearGradient>
+    <linearGradient id="glassWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="15%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="espressoLayer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d2411"/>
+      <stop offset="100%" stop-color="#240e04"/>
+    </linearGradient>
+    <linearGradient id="milkLayer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5e5ce"/>
+    </linearGradient>
+    <filter id="gSh">
+      <feDropShadow dx="0" dy="25" stdDeviation="18" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#cbg)"/>
+  
+  <!-- Wooden Coaster -->
+  <g filter="url(#gSh)">
+    <ellipse cx="400" cy="490" rx="170" ry="38" fill="#5a351d"/>
+    <ellipse cx="400" cy="486" rx="160" ry="34" fill="#804c2a"/>
+    <ellipse cx="400" cy="483" rx="150" ry="30" fill="#9d6037"/>
+  </g>
+
+  <!-- Gibraltar Faceted Glass -->
+  <!-- Glass Thick Base -->
+  <g filter="url(#gSh)">
+    <!-- Base Glass Solid -->
+    <path d="M 315 470 L 330 480 Q 400 495 470 480 L 485 470 L 495 240 Q 400 225 305 240 Z" fill="#000" opacity="0.3"/>
+    
+    <!-- Milk Lower / Blended Section -->
+    <path d="M 324 455 L 340 470 Q 400 482 460 470 L 476 455 L 485 360 Q 400 350 315 360 Z" fill="url(#milkLayer)"/>
+    
+    <!-- Rich Espresso Upper Layer -->
+    <path d="M 315 360 Q 400 350 485 360 L 493 270 Q 400 255 307 270 Z" fill="url(#espressoLayer)"/>
+    
+    <!-- Microfoam velvety top -->
+    <ellipse cx="400" cy="270" rx="93" ry="18" fill="#fffaf2"/>
+    <ellipse cx="400" cy="270" rx="75" ry="12" fill="#f8e7cb"/>
+    <circle cx="400" cy="270" r="14" fill="#a46231"/>
+    <path d="M 390 270 Q 400 262 410 270" stroke="#fff" stroke-width="2" fill="none"/>
+
+    <!-- Glass Facet Highlights (Octagonal glass reflections) -->
+    <path d="M 305 240 L 324 455" stroke="#fff" stroke-width="4" stroke-opacity="0.4"/>
+    <path d="M 350 248 L 360 468" stroke="#fff" stroke-width="2" stroke-opacity="0.2"/>
+    <path d="M 450 248 L 440 468" stroke="#fff" stroke-width="2" stroke-opacity="0.25"/>
+    <path d="M 495 240 L 476 455" stroke="#fff" stroke-width="5" stroke-opacity="0.5"/>
+    
+    <!-- Glass Rim Highlight -->
+    <ellipse cx="400" cy="240" rx="95" ry="18" fill="none" stroke="#fff" stroke-width="3" stroke-opacity="0.6"/>
+  </g>
+
+  <rect x="35" y="35" rx="8" ry="8" width="130" height="34" fill="#b8743a" opacity="0.9"/>
+  <text x="100" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">كورتادو متوازن</text>
+</svg>

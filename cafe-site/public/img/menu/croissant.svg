@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="crBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#36261c"/>
+      <stop offset="100%" stop-color="#160e0a"/>
+    </radialGradient>
+    <linearGradient id="crCrust" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e09038"/>
+      <stop offset="50%" stop-color="#bb661c"/>
+      <stop offset="100%" stop-color="#733508"/>
+    </linearGradient>
+    <linearGradient id="butter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd573"/>
+      <stop offset="100%" stop-color="#e69c24"/>
+    </linearGradient>
+    <filter id="crSh">
+      <feDropShadow dx="0" dy="22" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#crBg)"/>
+
+  <!-- Ceramic Serving Board -->
+  <g filter="url(#crSh)">
+    <rect x="180" y="160" width="440" height="340" rx="24" fill="#f5ede2"/>
+    <rect x="190" y="170" width="420" height="320" rx="18" fill="#eae0d2"/>
+    <!-- Baking paper -->
+    <rect x="220" y="200" width="360" height="260" rx="8" transform="rotate(-2, 400, 330)" fill="#dfd0be" opacity="0.6"/>
+  </g>
+
+  <!-- Golden Croissant Shape -->
+  <g filter="url(#crSh)">
+    <!-- Base Crescent Curve -->
+    <path d="M 230 380 C 230 260 330 220 400 220 C 470 220 570 260 570 380 C 530 360 480 340 400 340 C 320 340 270 360 230 380 Z" fill="url(#crCrust)"/>
+    
+    <!-- Central Plump Segments / Flaky Layers -->
+    <path d="M 350 225 C 380 205 420 205 450 225 C 470 270 470 330 450 350 C 420 365 380 365 350 350 C 330 330 330 270 350 225 Z" fill="url(#butter)"/>
+    <path d="M 370 215 C 390 208 410 208 430 215 C 445 250 445 320 430 340 C 410 350 390 350 370 340 C 355 320 355 250 370 215 Z" fill="#f8a735"/>
+
+    <!-- Left Wing Layers -->
+    <path d="M 270 340 C 280 270 330 240 360 235 C 345 290 345 330 330 350 Z" fill="url(#crCrust)"/>
+    <path d="M 230 380 C 240 320 275 300 300 320 C 275 355 250 375 230 380 Z" fill="#9e480e"/>
+
+    <!-- Right Wing Layers -->
+    <path d="M 530 340 C 520 270 470 240 440 235 C 455 290 455 330 470 350 Z" fill="url(#crCrust)"/>
+    <path d="M 570 380 C 560 320 525 300 500 320 C 525 355 550 375 570 380 Z" fill="#9e480e"/>
+
+    <!-- Flaky Crumb Highlights -->
+    <circle cx="280" cy="410" r="4" fill="#df9742"/>
+    <circle cx="510" cy="405" r="3.5" fill="#df9742"/>
+    <circle cx="340" cy="430" r="3" fill="#bb661c"/>
+    <circle cx="460" cy="425" r="5" fill="#df9742"/>
+  </g>
+
+  <rect x="35" y="35" rx="8" ry="8" width="140" height="34" fill="#b8743a" opacity="0.95"/>
+  <text x="105" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">كرواسون زبدة</text>
+</svg>

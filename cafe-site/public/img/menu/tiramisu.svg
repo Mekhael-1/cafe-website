@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tiBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#302018"/>
+      <stop offset="100%" stop-color="#110906"/>
+    </radialGradient>
+    <linearGradient id="mascarpone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbee"/>
+      <stop offset="100%" stop-color="#f6ebd2"/>
+    </linearGradient>
+    <linearGradient id="savoiardi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94582e"/>
+      <stop offset="100%" stop-color="#4e2b12"/>
+    </linearGradient>
+    <filter id="tiSh">
+      <feDropShadow dx="0" dy="22" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#tiBg)"/>
+
+  <!-- Plate -->
+  <g filter="url(#tiSh)">
+    <rect x="180" y="240" width="440" height="240" rx="30" fill="#faf5ee"/>
+    <rect x="190" y="250" width="420" height="220" rx="24" fill="#eee5d8"/>
+  </g>
+
+  <!-- Tiramisu Square Slice -->
+  <g filter="url(#tiSh)">
+    <!-- Base soaked biscuit layer -->
+    <rect x="250" y="380" width="280" height="40" rx="6" fill="url(#savoiardi)"/>
+    <!-- Lower Mascarpone cream layer -->
+    <rect x="250" y="340" width="280" height="40" rx="4" fill="url(#mascarpone)"/>
+    <!-- Middle soaked biscuit layer -->
+    <rect x="250" y="300" width="280" height="40" rx="4" fill="url(#savoiardi)"/>
+    <!-- Top Mascarpone Cream piped mounds -->
+    <ellipse cx="280" cy="295" rx="25" ry="15" fill="url(#mascarpone)"/>
+    <ellipse cx="330" cy="295" rx="25" ry="15" fill="url(#mascarpone)"/>
+    <ellipse cx="380" cy="295" rx="25" ry="15" fill="url(#mascarpone)"/>
+    <ellipse cx="430" cy="295" rx="25" ry="15" fill="url(#mascarpone)"/>
+    <ellipse cx="480" cy="295" rx="25" ry="15" fill="url(#mascarpone)"/>
+    <ellipse cx="510" cy="295" rx="20" ry="15" fill="url(#mascarpone)"/>
+
+    <!-- Cocoa powder heavy dusting layer -->
+    <path d="M 250 288 Q 390 278 530 288 L 530 293 Q 390 285 250 293 Z" fill="#3b1b0b"/>
+    <circle cx="280" cy="292" r="18" fill="#46220f" opacity="0.8"/>
+    <circle cx="330" cy="292" r="18" fill="#46220f" opacity="0.8"/>
+    <circle cx="380" cy="292" r="18" fill="#46220f" opacity="0.8"/>
+    <circle cx="430" cy="292" r="18" fill="#46220f" opacity="0.8"/>
+    <circle cx="480" cy="292" r="18" fill="#46220f" opacity="0.8"/>
+
+    <!-- Cocoa specs dusting on the plate -->
+    <circle cx="220" cy="390" r="1.5" fill="#3b1b0b"/>
+    <circle cx="230" cy="410" r="2" fill="#3b1b0b"/>
+    <circle cx="550" cy="400" r="1.8" fill="#3b1b0b"/>
+    <circle cx="565" cy="380" r="1.2" fill="#3b1b0b"/>
+    <circle cx="380" cy="445" r="2.2" fill="#3b1b0b"/>
+  </g>
+
+  <!-- Coffee bean on top -->
+  <g transform="translate(380, 275) rotate(25) scale(0.6)" filter="url(#tiSh)">
+    <ellipse cx="0" cy="0" rx="16" ry="24" fill="#1e0c05"/>
+    <path d="M 0 -20 Q 4 0 0 20" stroke="#7e4324" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <rect x="35" y="35" rx="8" ry="8" width="140" height="34" fill="#b8743a" opacity="0.95"/>
+  <text x="105" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">تيراميسو إيطالي</text>
+</svg>

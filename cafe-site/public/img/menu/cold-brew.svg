@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="cbg4" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1b2a32"/>
+      <stop offset="100%" stop-color="#0a1014"/>
+    </radialGradient>
+    <linearGradient id="coldLiquid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#231008"/>
+      <stop offset="50%" stop-color="#4d2311"/>
+      <stop offset="100%" stop-color="#231008"/>
+    </linearGradient>
+    <filter id="iceSh">
+      <feDropShadow dx="2" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#cbg4)"/>
+
+  <!-- Condensation droplets in background -->
+  <circle cx="280" cy="160" r="60" fill="#3a6073" opacity="0.15" filter="blur(20px)"/>
+  <circle cx="530" cy="420" r="90" fill="#c65d3b" opacity="0.12" filter="blur(25px)"/>
+
+  <!-- Coaster -->
+  <ellipse cx="400" cy="510" rx="140" ry="25" fill="#000" opacity="0.6"/>
+  <ellipse cx="400" cy="505" rx="130" ry="20" fill="#2d1c13"/>
+
+  <!-- Tall Highball Glass -->
+  <g>
+    <!-- Liquid Body -->
+    <path d="M 335 220 L 345 490 Q 400 500 455 490 L 465 220 Z" fill="url(#coldLiquid)"/>
+
+    <!-- Clear Ice Cubes floating -->
+    <!-- Ice Cube 1 -->
+    <g transform="translate(370, 240) rotate(12)" filter="url(#iceSh)">
+      <rect x="0" y="0" width="60" height="60" rx="8" fill="#ffffff" fill-opacity="0.3" stroke="#fff" stroke-width="2" stroke-opacity="0.7"/>
+      <line x1="8" y1="8" x2="40" y2="12" stroke="#fff" stroke-width="2" stroke-opacity="0.6"/>
+    </g>
+    <!-- Ice Cube 2 -->
+    <g transform="translate(365, 330) rotate(-15)" filter="url(#iceSh)">
+      <rect x="0" y="0" width="65" height="65" rx="8" fill="#ffffff" fill-opacity="0.25" stroke="#fff" stroke-width="2" stroke-opacity="0.6"/>
+    </g>
+    <!-- Ice Cube 3 -->
+    <g transform="translate(375, 410) rotate(8)" filter="url(#iceSh)">
+      <rect x="0" y="0" width="55" height="55" rx="7" fill="#ffffff" fill-opacity="0.2" stroke="#fff" stroke-width="1.5" stroke-opacity="0.5"/>
+    </g>
+
+    <!-- Glass Wall Highlights -->
+    <path d="M 330 180 L 345 490 Q 400 502 455 490 L 470 180" fill="none" stroke="#ffffff" stroke-width="6" stroke-opacity="0.35"/>
+    <line x1="340" y1="200" x2="352" y2="480" stroke="#fff" stroke-width="3" stroke-opacity="0.5"/>
+    <ellipse cx="400" cy="180" rx="70" ry="14" fill="none" stroke="#fff" stroke-width="3" stroke-opacity="0.7"/>
+
+    <!-- Lemon / Orange Garnish Wheel on rim -->
+    <g transform="translate(460, 180) rotate(30)">
+      <circle cx="0" cy="0" r="38" fill="#e67e22"/>
+      <circle cx="0" cy="0" r="32" fill="#f39c12"/>
+      <circle cx="0" cy="0" r="28" fill="#f1c40f"/>
+      <path d="M 0 -28 L 0 28 M -28 0 L 28 0 M -20 -20 L 20 20 M -20 20 L 20 -20" stroke="#fff" stroke-width="2" stroke-opacity="0.7"/>
+    </g>
+
+    <!-- Fresh Mint Sprig -->
+    <path d="M 350 170 Q 330 130 310 140 Q 330 160 350 170" fill="#27ae60"/>
+    <path d="M 350 170 Q 360 120 380 130 Q 370 160 350 170" fill="#2ecc71"/>
+  </g>
+
+  <rect x="35" y="35" rx="8" ry="8" width="140" height="34" fill="#c65d3b" opacity="0.9"/>
+  <text x="105" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">كولد برو 18 ساعة</text>
+</svg>

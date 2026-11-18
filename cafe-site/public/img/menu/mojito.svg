@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="moBg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#142825"/>
+      <stop offset="100%" stop-color="#081311"/>
+    </radialGradient>
+    <linearGradient id="passionLiquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="50%" stop-color="#fb8500"/>
+      <stop offset="100%" stop-color="#e85d04"/>
+    </linearGradient>
+    <filter id="moSh">
+      <feDropShadow dx="0" dy="25" stdDeviation="18" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#moBg)"/>
+
+  <!-- Glass Shadow -->
+  <ellipse cx="400" cy="515" rx="130" ry="24" fill="#000" opacity="0.6"/>
+
+  <!-- Highball Glass & Tropical Mocktail -->
+  <g filter="url(#moSh)">
+    <!-- Golden Orange Sparkly Liquid -->
+    <path d="M 330 200 L 342 490 Q 400 502 458 490 L 470 200 Z" fill="url(#passionLiquid)"/>
+
+    <!-- Crushed Ice & Bubbles -->
+    <circle cx="380" cy="260" r="18" fill="#fff" opacity="0.3"/>
+    <circle cx="430" cy="300" r="14" fill="#fff" opacity="0.25"/>
+    <circle cx="360" cy="350" r="12" fill="#fff" opacity="0.3"/>
+    <circle cx="410" cy="400" r="10" fill="#fff" opacity="0.2"/>
+    <circle cx="370" cy="440" r="6" fill="#fff" opacity="0.4"/>
+    <circle cx="440" cy="460" r="5" fill="#fff" opacity="0.4"/>
+    <circle cx="395" cy="320" r="7" fill="#fff" opacity="0.5"/>
+
+    <!-- Real Passion Fruit Black Seeds -->
+    <ellipse cx="370" cy="420" rx="5" ry="9" transform="rotate(30, 370, 420)" fill="#2d1305"/>
+    <ellipse cx="420" cy="440" rx="6" ry="10" transform="rotate(-20, 420, 440)" fill="#2d1305"/>
+    <ellipse cx="435" cy="380" rx="5" ry="8" transform="rotate(45, 435, 380)" fill="#2d1305"/>
+    <ellipse cx="360" cy="470" rx="4" ry="7" transform="rotate(-15, 360, 470)" fill="#2d1305"/>
+    <ellipse cx="400" cy="480" rx="5" ry="9" transform="rotate(10, 400, 480)" fill="#2d1305"/>
+
+    <!-- Fresh Mint Leaves inside -->
+    <path d="M 350 250 Q 330 220 370 210 Q 390 230 350 250" fill="#2d6a4f"/>
+    <path d="M 430 310 Q 460 280 470 320 Q 440 330 430 310" fill="#40916c"/>
+    <path d="M 370 170 Q 350 120 330 140 Q 355 170 370 170" fill="#52b788"/>
+
+    <!-- Lime Wheel Garnish -->
+    <g transform="translate(460, 195) rotate(25)">
+      <circle cx="0" cy="0" r="38" fill="#2d6a4f"/>
+      <circle cx="0" cy="0" r="32" fill="#74c69d"/>
+      <circle cx="0" cy="0" r="28" fill="#d8f3dc"/>
+      <path d="M 0 -28 L 0 28 M -28 0 L 28 0" stroke="#fff" stroke-width="2"/>
+    </g>
+
+    <!-- Glass Walls & Gloss Reflection -->
+    <path d="M 325 180 L 342 490 Q 400 504 458 490 L 475 180" fill="none" stroke="#fff" stroke-width="4.5" stroke-opacity="0.5"/>
+    <line x1="335" y1="200" x2="348" y2="480" stroke="#fff" stroke-width="3" stroke-opacity="0.6"/>
+    <ellipse cx="400" cy="180" rx="75" ry="15" fill="none" stroke="#fff" stroke-width="3" stroke-opacity="0.8"/>
+
+    <!-- Reusable Bamboo/Glass Straw -->
+    <rect x="365" y="80" width="10" height="420" rx="5" transform="rotate(10, 365, 180)" fill="#ffe8d6" opacity="0.6" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <rect x="35" y="35" rx="8" ry="8" width="155" height="34" fill="#2d6a4f" opacity="0.95"/>
+  <text x="112" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">موهيتو باشن فروت</text>
+</svg>

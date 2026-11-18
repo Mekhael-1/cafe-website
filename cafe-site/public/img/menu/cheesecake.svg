@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="chBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2c1f19"/>
+      <stop offset="100%" stop-color="#120b08"/>
+    </radialGradient>
+    <linearGradient id="caramelizedTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0c06"/>
+      <stop offset="40%" stop-color="#3d180b"/>
+      <stop offset="70%" stop-color="#5a2912"/>
+      <stop offset="100%" stop-color="#2b1106"/>
+    </linearGradient>
+    <linearGradient id="creamCenter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb"/>
+      <stop offset="60%" stop-color="#f5e1be"/>
+      <stop offset="100%" stop-color="#deb885"/>
+    </linearGradient>
+    <filter id="chSh">
+      <feDropShadow dx="0" dy="25" stdDeviation="18" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#chBg)"/>
+
+  <!-- Elegant Dark Ceramic Plate -->
+  <g filter="url(#chSh)">
+    <ellipse cx="400" cy="380" rx="250" ry="110" fill="#e8dfd3"/>
+    <ellipse cx="400" cy="376" rx="235" ry="98" fill="#d8cbba"/>
+    <!-- Belgian Chocolate Sauce Drizzle on plate -->
+    <path d="M 220 380 Q 300 420 420 380 T 560 410" fill="none" stroke="#2a1408" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 260 400 Q 340 435 480 395" fill="none" stroke="#3d1e0d" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- San Sebastian Slice -->
+  <g filter="url(#chSh)">
+    <!-- Creamy inside body -->
+    <path d="M 280 330 L 480 230 L 530 350 L 320 430 Z" fill="url(#creamCenter)"/>
+    
+    <!-- Torched burnt dark top crust -->
+    <path d="M 280 330 L 480 230 Q 520 200 440 210 L 250 310 Q 260 325 280 330 Z" fill="url(#caramelizedTop)"/>
+    
+    <!-- Soft gooey dripping center -->
+    <path d="M 330 360 Q 360 420 340 440 Q 310 420 320 380 Z" fill="#fff5e0"/>
+    <path d="M 390 330 Q 420 390 405 410 Q 380 390 385 350 Z" fill="#fff8ed"/>
+
+    <!-- Burnt crinkle texture on edge -->
+    <path d="M 480 230 L 530 350" stroke="#1d0c05" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 250 310 L 280 330" stroke="#2a1107" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Mint leaf garnish -->
+  <g transform="translate(480, 210) rotate(-20)">
+    <ellipse cx="0" cy="0" rx="14" ry="7" fill="#43a047"/>
+    <ellipse cx="10" cy="-5" rx="12" ry="6" fill="#66bb6a"/>
+  </g>
+
+  <rect x="35" y="35" rx="8" ry="8" width="160" height="34" fill="#b8743a" opacity="0.95"/>
+  <text x="115" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">سان سيباستيان كيك</text>
+</svg>

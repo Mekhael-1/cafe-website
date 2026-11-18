@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgG2" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#342217"/>
+      <stop offset="100%" stop-color="#140a06"/>
+    </radialGradient>
+    <radialGradient id="topLatteG" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="#804a25"/>
+      <stop offset="90%" stop-color="#552c10"/>
+      <stop offset="100%" stop-color="#3a1b07"/>
+    </radialGradient>
+    <linearGradient id="cupCeramic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3e6053"/>
+      <stop offset="50%" stop-color="#243d34"/>
+      <stop offset="100%" stop-color="#13231d"/>
+    </linearGradient>
+    <filter id="sh2">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgG2)"/>
+  
+  <!-- Wood Table Texture Lines -->
+  <path d="M 0 180 Q 400 190 800 175" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1.5" fill="none"/>
+  <path d="M 0 350 Q 400 360 800 345" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2" fill="none"/>
+  <path d="M 0 520 Q 400 525 800 515" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1.5" fill="none"/>
+
+  <!-- Saucer -->
+  <g filter="url(#sh2)">
+    <circle cx="400" cy="300" r="230" fill="url(#cupCeramic)"/>
+    <circle cx="400" cy="300" r="215" fill="#1b2f27"/>
+    <circle cx="400" cy="300" r="180" fill="#2d493f"/>
+    <!-- Cup Rim Top View -->
+    <circle cx="400" cy="300" r="160" fill="url(#cupCeramic)"/>
+    <circle cx="400" cy="300" r="150" fill="#fff" opacity="0.95"/>
+    <!-- Coffee Surface -->
+    <circle cx="400" cy="300" r="142" fill="url(#topLatteG)"/>
+  </g>
+
+  <!-- Rosetta / Heart Latte Art (Precision SVG Paths) -->
+  <g transform="translate(400, 305) scale(1.15)">
+    <!-- Base Heart / Leaves -->
+    <path d="M 0 -85 C 40 -85 70 -50 60 -10 C 50 25 15 65 0 85 C -15 65 -50 25 -60 -10 C -70 -50 -40 -85 0 -85 Z" fill="#fff8ed" opacity="0.96"/>
+    <path d="M 0 -65 C 30 -65 52 -35 45 -5 C 38 20 10 50 0 65 C -10 50 -38 20 -45 -5 C -52 -35 -30 -65 0 -65 Z" fill="#fdf2db"/>
+    <!-- Inner leaves layers -->
+    <path d="M 0 -45 C 22 -45 38 -20 32 5 C 26 25 8 45 0 52 C -8 45 -26 25 -32 5 C -38 -20 -22 -45 0 -45 Z" fill="#fff9ef"/>
+    <path d="M 0 -25 C 15 -25 25 -5 20 12 C 15 25 5 35 0 40 C -5 35 -15 25 -20 12 C -25 -5 -15 -25 0 -25 Z" fill="#fff"/>
+    <!-- Cut-through stem line -->
+    <path d="M 0 -95 L 0 92" stroke="#a46231" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="0" cy="94" r="5" fill="#a46231"/>
+  </g>
+
+  <!-- Cinnamon powder sprinkles -->
+  <circle cx="480" cy="220" r="2.5" fill="#5c2609"/>
+  <circle cx="490" cy="235" r="2" fill="#5c2609"/>
+  <circle cx="475" cy="245" r="1.5" fill="#5c2609"/>
+  <circle cx="320" cy="370" r="2" fill="#5c2609"/>
+  <circle cx="310" cy="385" r="2.5" fill="#5c2609"/>
+
+  <rect x="35" y="35" rx="8" ry="8" width="130" height="34" fill="#7c8f6b" opacity="0.95"/>
+  <text x="100" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">لاتيه آرت دقيق</text>
+</svg>

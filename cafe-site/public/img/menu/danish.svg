@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="danBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#38251e"/>
+      <stop offset="100%" stop-color="#140a07"/>
+    </radialGradient>
+    <linearGradient id="puffPastry" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8be60"/>
+      <stop offset="60%" stop-color="#cf771e"/>
+      <stop offset="100%" stop-color="#8a3d09"/>
+    </linearGradient>
+    <radialGradient id="cheeseCream" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#fff0d0"/>
+      <stop offset="100%" stop-color="#e2cba0"/>
+    </radialGradient>
+    <radialGradient id="berryCompote" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#d4145a"/>
+      <stop offset="60%" stop-color="#8c0335"/>
+      <stop offset="100%" stop-color="#49011a"/>
+    </radialGradient>
+    <filter id="dSh">
+      <feDropShadow dx="0" dy="20" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#danBg)"/>
+
+  <!-- Slate Plate -->
+  <g filter="url(#dSh)">
+    <circle cx="400" cy="310" r="210" fill="#2d3336"/>
+    <circle cx="400" cy="310" r="200" fill="#202528"/>
+  </g>
+
+  <!-- Danish Pastry Base (Pinwheel / Square puffed pastry) -->
+  <g filter="url(#dSh)" transform="translate(400, 310)">
+    <!-- Swirled Puffed Edges -->
+    <path d="M -130 -130 Q 0 -170 130 -130 Q 170 0 130 130 Q 0 170 -130 130 Q -170 0 -130 -130 Z" fill="url(#puffPastry)"/>
+    <circle cx="0" cy="0" r="105" fill="#bd6d1b"/>
+    <!-- Custard / Cream Cheese center -->
+    <circle cx="0" cy="0" r="80" fill="url(#cheeseCream)"/>
+    <!-- Fresh Raspberry Compote Core -->
+    <circle cx="0" cy="0" r="50" fill="url(#berryCompote)"/>
+    
+    <!-- Fresh Berries details -->
+    <circle cx="-15" cy="-10" r="14" fill="#a3083f"/>
+    <circle cx="15" cy="-8" r="13" fill="#c21350"/>
+    <circle cx="2" cy="16" r="15" fill="#880432"/>
+    <!-- Glistening gloss highlight -->
+    <ellipse cx="-5" cy="-15" rx="10" ry="5" fill="#fff" opacity="0.6"/>
+
+    <!-- Powdered sugar dust -->
+    <circle cx="-90" cy="-70" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="-80" cy="-60" r="1.5" fill="#fff" opacity="0.7"/>
+    <circle cx="85" cy="70" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="95" cy="55" r="1.5" fill="#fff" opacity="0.6"/>
+  </g>
+
+  <rect x="35" y="35" rx="8" ry="8" width="135" height="34" fill="#c65d3b" opacity="0.95"/>
+  <text x="102" y="58" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">دانيش التوت</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="abBg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#342016"/>
+      <stop offset="70%" stop-color="#190d08"/>
+      <stop offset="100%" stop-color="#0a0402"/>
+    </radialGradient>
+    <linearGradient id="roasterDrum" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a3b32"/>
+      <stop offset="40%" stop-color="#2a1f18"/>
+      <stop offset="100%" stop-color="#140d09"/>
+    </linearGradient>
+    <filter id="fireGlow"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#abBg)"/>
+
+  <!-- Roaster Fire Glow -->
+  <circle cx="400" cy="620" r="180" fill="#e65100" opacity="0.35" filter="url(#fireGlow)"/>
+  <circle cx="400" cy="620" r="120" fill="#ffb300" opacity="0.25" filter="url(#fireGlow)"/>
+
+  <!-- Vintage Cast-iron Drum Roaster machine -->
+  <g transform="translate(400, 480)">
+    <!-- Cooling tray round ring -->
+    <ellipse cx="0" cy="220" rx="280" ry="100" fill="#1d1511" stroke="#4d3a2e" stroke-width="8"/>
+    <ellipse cx="0" cy="210" rx="260" ry="85" fill="#321b0f"/>
+    <!-- Freshly roasted coffee beans in cooling tray -->
+    <ellipse cx="0" cy="205" rx="245" ry="75" fill="#4a2816"/>
+    <!-- Stirrer arm -->
+    <rect x="-200" y="195" width="400" height="14" rx="4" transform="rotate(25)" fill="#baa48b"/>
+
+    <!-- Roasting Drum housing -->
+    <rect x="-180" y="-220" width="360" height="340" rx="30" fill="url(#roasterDrum)" stroke="#baa48b" stroke-width="4"/>
+    <!-- Center brass emblem / viewing glass -->
+    <circle cx="0" cy="-60" r="75" fill="#e65100" opacity="0.6" filter="url(#fireGlow)"/>
+    <circle cx="0" cy="-60" r="60" fill="#ffa726" opacity="0.5"/>
+    <circle cx="0" cy="-60" r="50" fill="none" stroke="#baa48b" stroke-width="8"/>
+
+    <!-- Green Bean Hopper on top -->
+    <polygon points="-100,-220 100,-220 40,-340 -40,-340" fill="#b0bec5" stroke="#78909c" stroke-width="4"/>
+    <ellipse cx="0" cy="-340" rx="40" ry="12" fill="#78909c"/>
+  </g>
+
+  <!-- Burlap Sack of Specialty Green Beans leaning in foreground -->
+  <g transform="translate(180, 800)">
+    <path d="M -90 -120 C -120 40 -80 120 0 120 C 80 120 120 40 90 -120 C 40 -140 -40 -140 -90 -120 Z" fill="#b59975"/>
+    <path d="M -70 -110 Q 0 -130 70 -110" fill="none" stroke="#684f33" stroke-width="6"/>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3e2716" text-anchor="middle">ETHIOPIA</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="14" fill="#3e2716" text-anchor="middle">YIRGACHEFFE</text>
+  </g>
+</svg>

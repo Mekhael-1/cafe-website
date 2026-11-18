@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="g5bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#3b281f"/>
+      <stop offset="100%" stop-color="#150a06"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g5bg)"/>
+
+  <!-- Wooden Display Tier / Marble Tray -->
+  <rect x="80" y="220" width="640" height="300" rx="20" fill="#f5ede2"/>
+  <rect x="90" y="230" width="620" height="280" rx="14" fill="#eae0d2"/>
+
+  <!-- Croissant 1 -->
+  <path d="M 140 360 C 140 290 220 260 270 260 C 320 260 400 290 400 360 Z" fill="#d37e28"/>
+  <path d="M 230 265 C 255 250 285 250 310 265 C 320 310 320 350 310 360 C 285 370 255 370 230 360 Z" fill="#f3a846"/>
+
+  <!-- Cinnamon Swirl Roll -->
+  <ellipse cx="500" cy="330" rx="75" ry="65" fill="#bb6c24"/>
+  <path d="M 500 330 m -50 0 a 50 40 0 1 0 100 0 a 50 40 0 1 0 -100 0" fill="none" stroke="#683109" stroke-width="9"/>
+  <!-- White sugar glaze icing -->
+  <path d="M 460 300 Q 500 320 540 290" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 450 330 Q 500 350 550 320" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Chocolate Babka / Loaf Slices -->
+  <rect x="220" y="400" width="360" height="80" rx="12" fill="#783e18"/>
+  <path d="M 260 410 Q 320 440 380 410 Q 440 440 500 410" stroke="#311505" stroke-width="12" fill="none"/>
+</svg>

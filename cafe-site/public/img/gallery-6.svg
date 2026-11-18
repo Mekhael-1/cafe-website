@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="g6bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#2c1a24"/>
+      <stop offset="60%" stop-color="#190e1b"/>
+      <stop offset="100%" stop-color="#0a050c"/>
+    </radialGradient>
+    <filter id="fairy"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#g6bg)"/>
+
+  <!-- Ambient Amber / Violet cafe glow -->
+  <ellipse cx="400" cy="350" rx="350" ry="200" fill="#c65d3b" opacity="0.15" filter="url(#fairy)"/>
+  <ellipse cx="600" cy="200" rx="200" ry="120" fill="#b8743a" opacity="0.2" filter="url(#fairy)"/>
+
+  <!-- Hanging Fairy Lights String -->
+  <path d="M 0 100 Q 200 180 400 130 T 800 110" fill="none" stroke="#554433" stroke-width="2"/>
+  <path d="M 0 170 Q 250 250 500 190 T 800 200" fill="none" stroke="#554433" stroke-width="2"/>
+
+  <!-- Fairy Light Bulbs Glowing -->
+  <g filter="url(#fairy)">
+    <circle cx="100" cy="135" r="14" fill="#ffd166"/>
+    <circle cx="230" cy="165" r="16" fill="#ffd166"/>
+    <circle cx="360" cy="140" r="15" fill="#ffb703"/>
+    <circle cx="520" cy="120" r="16" fill="#ffd166"/>
+    <circle cx="680" cy="115" r="15" fill="#ffb703"/>
+
+    <circle cx="150" cy="205" r="14" fill="#ffb703"/>
+    <circle cx="320" cy="230" r="16" fill="#ffd166"/>
+    <circle cx="470" cy="200" r="15" fill="#ffd166"/>
+    <circle cx="640" cy="195" r="16" fill="#ffb703"/>
+  </g>
+  <!-- Sharp filament centers -->
+  <circle cx="100" cy="135" r="5" fill="#fff"/>
+  <circle cx="230" cy="165" r="5" fill="#fff"/>
+  <circle cx="360" cy="140" r="5" fill="#fff"/>
+  <circle cx="520" cy="120" r="5" fill="#fff"/>
+  <circle cx="680" cy="115" r="5" fill="#fff"/>
+
+  <circle cx="150" cy="205" r="5" fill="#fff"/>
+  <circle cx="320" cy="230" r="5" fill="#fff"/>
+  <circle cx="470" cy="200" r="5" fill="#fff"/>
+  <circle cx="640" cy="195" r="5" fill="#fff"/>
+
+  <!-- Silhouettes of Cafe Guests chatting warmly -->
+  <path d="M 160 520 C 180 430 250 420 280 520 Z" fill="#150a12"/>
+  <circle cx="220" cy="400" r="35" fill="#150a12"/>
+  <path d="M 520 520 C 550 420 620 430 640 520 Z" fill="#150a12"/>
+  <circle cx="580" cy="395" r="35" fill="#150a12"/>
+
+  <!-- Candle on Table between them -->
+  <ellipse cx="400" cy="510" rx="140" ry="40" fill="#22111d"/>
+  <rect x="393" y="460" width="14" height="40" rx="4" fill="#faf5ee"/>
+  <circle cx="400" cy="445" r="12" fill="#ffd166" filter="url(#fairy)"/>
+  <circle cx="400" cy="445" r="5" fill="#fff"/>
+</svg>

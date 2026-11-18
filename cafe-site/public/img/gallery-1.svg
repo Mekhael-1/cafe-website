@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="g1bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#2c1a11"/>
+      <stop offset="60%" stop-color="#140a06"/>
+      <stop offset="100%" stop-color="#080302"/>
+    </radialGradient>
+    <linearGradient id="copperKettle" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#e07a4b"/>
+      <stop offset="40%" stop-color="#c65d3b"/>
+      <stop offset="70%" stop-color="#8a371c"/>
+      <stop offset="100%" stop-color="#551e0d"/>
+    </linearGradient>
+    <filter id="fblur"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#g1bg)"/>
+  <!-- Ambient Warm lighting -->
+  <circle cx="350" cy="200" r="160" fill="#c65d3b" opacity="0.25" filter="url(#fblur)"/>
+  <circle cx="500" cy="400" r="140" fill="#ffd285" opacity="0.1" filter="url(#fblur)"/>
+
+  <!-- Glass Server Carafe at bottom -->
+  <path d="M 330 380 L 310 520 Q 400 540 490 520 L 470 380 Z" fill="#25120a" stroke="#fff" stroke-width="3" stroke-opacity="0.3"/>
+  <!-- Coffee liquid inside Server -->
+  <path d="M 318 460 L 310 520 Q 400 540 490 520 L 482 460 Q 400 480 318 460 Z" fill="#4d2410"/>
+  <path d="M 470 420 C 530 420 530 500 475 510" fill="none" stroke="#fff" stroke-width="8" stroke-opacity="0.3" stroke-linecap="round"/>
+
+  <!-- V60 Ceramic Dripper Cone -->
+  <polygon points="300,240 500,240 430,370 370,370" fill="#fdfaf3" stroke="#e0d5c1" stroke-width="2"/>
+  <path d="M 320 240 L 380 370 M 360 240 L 390 370 M 400 240 L 400 370 M 440 240 L 410 370 M 480 240 L 420 370" stroke="#d5c4aa" stroke-width="3"/>
+  <!-- White paper filter & blooming coffee grounds -->
+  <polygon points="315,240 485,240 425,350 375,350" fill="#8b5229"/>
+  <ellipse cx="400" cy="245" rx="75" ry="18" fill="#4a250f"/>
+  <ellipse cx="400" cy="245" rx="55" ry="12" fill="#713e1c"/>
+
+  <!-- Gooseneck Kettle pouring thin stream -->
+  <!-- Thin graceful water stream -->
+  <path d="M 280 180 Q 390 190 400 245" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 280 180 Q 390 190 400 245" fill="none" stroke="#ffe7c2" stroke-width="2" opacity="0.9"/>
+  <!-- Gooseneck Spout -->
+  <path d="M 170 280 Q 180 140 275 178" fill="none" stroke="url(#copperKettle)" stroke-width="16" stroke-linecap="round"/>
+  <!-- Kettle body snippet -->
+  <path d="M 60 220 L 170 220 L 190 380 L 40 380 Z" fill="url(#copperKettle)"/>
+
+  <!-- Steam rising -->
+  <path d="M 380 220 Q 350 160 390 100" fill="none" stroke="#fff" stroke-width="4" opacity="0.25" stroke-linecap="round"/>
+  <path d="M 420 210 Q 450 150 410 90" fill="none" stroke="#fff" stroke-width="4" opacity="0.2" stroke-linecap="round"/>
+</svg>
