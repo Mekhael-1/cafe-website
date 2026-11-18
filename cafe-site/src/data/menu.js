@@ -28,7 +28,7 @@ export const menuItems = [
     price: 55,
     desc: "توازن مثالي بنسبة 1:1 بين الإسبريسو المركز والحليب المبخر قليل الرغوة في كأس زجاجي مميز.",
     calories: "85 سعرة",
-    img: "/img/menu/cafe 4.jpg",
+    img: "/img/menu/cafe4.jpg",
   },
   {
     id: 4,
