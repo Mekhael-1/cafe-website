@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Sparkles, Flame, Plus, Check } from "lucide-react";
 import { useState } from "react";
+import { asset } from "../../../lib/utils";
 
 export default function MenuCard({ item, onOrder }) {
   const [ordered, setOrdered] = useState(false);
@@ -32,7 +33,7 @@ export default function MenuCard({ item, onOrder }) {
           )}
           
           <img
-            src={item.img}
+            src={asset(item.img)}
             alt={item.name}
             loading="lazy"
             className="h-full w-full object-cover object-center rounded-xl transition-transform duration-700 ease-out group-hover:scale-108"

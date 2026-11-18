@@ -3,6 +3,7 @@ import Reveal from "../ui/Reveal";
 import SectionTitle from "../ui/SectionTitle";
 import { Coffee, Award, Users, ShieldCheck, HeartHandshake } from "lucide-react";
 import { motion } from "framer-motion";
+import { asset } from "../../lib/utils";
 
 const stats = [
   { value: "+12", label: "نوع بن مختص", icon: Coffee },
@@ -25,7 +26,7 @@ export default function About() {
                 <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6 }}
-                  src="/img/cafe 1.jpg"
+                  src={asset("/img/cafe 1.jpg")}
                   alt="محمصة كافيه بن وحكاية"
                   loading="lazy"
                   className="aspect-[4/5] w-full object-cover"

@@ -4,6 +4,7 @@ import { X, ZoomIn, Eye, Sparkles } from "lucide-react";
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
 import Reveal from "../ui/Reveal";
+import { asset } from "../../lib/utils";
 
 const photos = [
   { id: 1, src: "/img/gallery/decor1.jpg", title: "ركن التحضير والترشيح V60", tag: "تحضير يدوي", desc: "ترشيح يدوي دقيق بمحاصيل إثيوبية وكولومبية منتقاة بعناية لتقديم نكهة نقية." },
@@ -38,7 +39,7 @@ export default function Gallery() {
             >
               <div onClick={() => setSelectedPhoto(p)} className="h-full w-full">
                 <motion.img
-                  src={p.src}
+                  src={asset(p.src)}
                   alt={p.title}
                   loading="lazy"
                   whileHover={{ scale: 1.08 }}
@@ -93,7 +94,7 @@ export default function Gallery() {
               
               <div className="relative aspect-[4/3] max-h-[65vh] w-full bg-roast">
                 <img
-                  src={selectedPhoto.src}
+                  src={asset(selectedPhoto.src)}
                   alt={selectedPhoto.title}
                   className="h-full w-full object-cover"
                 />
